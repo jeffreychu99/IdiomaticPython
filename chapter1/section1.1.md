@@ -17,7 +17,7 @@
 
 ```python
 if foo == True: 
-````
+```
 
 可以简单地写成
 
@@ -54,7 +54,7 @@ if position:
 
 问题出在哪里？如果想要在位置0插值，函数没有任何赋值操作，因为当position为0时，判断为假。注意和None比较时，应该总是使用is或is not，而不是==（参考PEP8）.
 
-#### 1.1.1.1 不当的方式
+#### 1.1.1.1 不好的风格
 
 ```python
 def number_of_evil_robots_attacking():
@@ -70,7 +70,7 @@ else:
     print('Safe! No giant robots attacking')
 ```
 
-#### 1.1.1.2 优雅的方式
+#### 1.1.1.2 python的风格
 
 ```python
 def number_of_evil_robots_attacking():
@@ -84,4 +84,47 @@ if should_raise_shields():
     print('Shields raised')
 else:
     print('Safe! No giant robots attacking')
+```
+
+### 1.1.2 避免在复合条件语句中重复变量名称
+
+当检测变量是否对应一些列值时，重复使用变量进行数值比较是不必要的。使用迭代的方式可以让代码更加清晰，并且可读性更好。
+
+#### 1.1.2.1 不好的风格
+
+```python
+is_generic_name = False
+name = 'Tom'
+if name == 'Tom' or name == 'Dick' or name == 'Harry':
+    is_generic_name = True
+```
+
+#### 1.1.2.2 python的风格
+
+```python
+name = 'Tom'
+is_generic_name = name in ('Tom', 'Dick', 'Harry')
+```
+
+### 1.1.3 避免把条件分支代码和分号放到同一行
+
+使用缩进来表示范围(python就是这么做的)可以更容易知道代码是否是条件语句的一部分。if, elif和else语句应单独写成一行，冒号后面不应再写代码。
+
+#### 1.1.3.1 不好的风格
+
+```python
+name = 'Jeff'
+address = 'New York, NY'
+if name: print(name)
+print(address)
+```
+
+#### 1.1.3.2 python的风格
+
+```python
+name = 'Jeff'
+address = 'New York, NY'
+if name:
+    print(name)
+print(address)
 ```
