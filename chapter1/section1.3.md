@@ -48,7 +48,7 @@ print(f(3))
 
 通常情况下，函数需要接受任意的位置参数列表或关键字参数，使用它们中的一部分，并将其余的部分传递给其他函数。 使用*args和**kwargs作为参数允许函数接受任意的位置和关键字参数列表。在维护API的向后兼容性时，这个习性也很有用。如果函数接受任意参数，那么可以在新版本中自由地添加新的参数而不会破会现有使用较少参数的代码。只要一切文档记录正确，函数的实际参数是什么并没有多少影响。
 
-####1.3.2.1 不好的风格
+#### 1.3.2.1 不好的风格
 
 ```python
 def make_api_call(foo, bar, baz):
@@ -130,3 +130,4 @@ def new_hotness():
         # I can even forward my args to a different function without
         # knowing their contents!
         return baz_coefficient in new_function(args)    
+```
