@@ -105,6 +105,7 @@ class Point():
 p = Point(1, 2)
 print (p)
 # Prints '<__main__.Point object at 0x91ebd0>'
+```
 
 2.4.2.2 python的风格
 
@@ -118,3 +119,4 @@ class Point():
 p = Point(1, 2)
 print (p)
 # Prints '1, 2'
+```
