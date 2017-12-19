@@ -12,7 +12,7 @@
 
 答案是：否。假定我们的display函数实现是合理的，那么集合可以直接替换列表。这得益于集合事实上像列表一样，是可迭代的，可以在循环、列表推导中等使用。
 
-2.5.1.1 Harmful
+2.5.1.1 不好的风格
 
 ```python
 unique_surnames = []
@@ -32,7 +32,7 @@ def display(elements, output_format='html'):
         raise RuntimeError('Unknown format {}'.format(output_format))
 ```
 
-2.5.1.2 Idiomatic
+2.5.1.2 python的风格
 
 ```python
 unique_surnames = set(employee_surnames)
