@@ -54,3 +54,40 @@ if this_is_bad_code:
     rewrite_code()
     make_it_more_readable()
 ```
+
+### 3.2.3 依据PEP8规则调整代码风格
+
+Python定义了一套代码风格规则，俗称PEP8。如果你浏览Python工程的commit信息时，你将会发现，里面散落对PEP8的引用。原因很简单：如果我们都同意通用的命名和格式约定，那么所有的Python代码对新手和经验丰富的开发者而言，可读性更好。PEP8也许是Python社区中习语最明显的例子。阅读PEP，需要为编辑器安装PEP8的样式检查插件（一般编辑器都有），用其它程序员都欣赏的风格编写代码。下面列举几个例子：
+
+<table>
+    <tr>
+        <th>标识符类型</th>
+        <th>格式</th>
+        <th>示例</th>
+    </tr>
+    <tr>
+        <td>类</td>
+        <td>首字母大写的Camel风格</td>
+        <td>class StringManipulator():</td>
+    </tr>
+    <tr>
+        <td>变量</td>
+        <td>单词之间使用_连接</td>
+        <td>joined_by_underscore = True</td>
+    </tr>
+    <tr>
+        <td>函数</td>
+        <td>单词之间使用_连接</td>
+        <td>def multi_word_name(words):</td>
+    </tr>
+    <tr>
+        <td>常量</td>
+        <td>所有字母大写</td>
+        <td>SECRET_KEY = 42</td>
+    </tr>
+</table>
+
+一般其它没有列出的遵循变量和函数命名习惯：单词之间使用下划线连接。
+
+
+
