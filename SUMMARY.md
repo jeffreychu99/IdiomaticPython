@@ -15,7 +15,7 @@
     * [2.7 上下文管理](chapter2/section2.7.md)
     * [2.8 元组](chapter2/section2.8.md)
     * [2.9 变量](chapter2/section2.9.md)
-* [3. 重构代码](chapter3/README.md)
+* [3. 组织代码](chapter3/README.md)
     * [3.1 模块和包](chapter3/section3.1.md)
     * [3.2 格式化](chapter3/section3.2.md)
     * [3.3 执行脚本](chapter3/section3.3.md)
